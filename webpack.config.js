@@ -2,12 +2,12 @@ var path = require('path')
 var webpack = require('webpack')
 const NODE_ENV = process.env.NODE_ENV;
 module.exports = {
-  entry: NODE_ENV==='development'?'./src/main.js':'./src/index.js',
+  entry: NODE_ENV==='development'?'./src/main.js':'./src/packages/SvgBorder/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'liwanjin.js',
-		library: 'liwanjin',
+    filename: 'SvgBorder.js',
+		library: 'SvgBorder',
 		libraryTarget: 'umd',
 		umdNamedDefine: true
 	},

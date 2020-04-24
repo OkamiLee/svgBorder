@@ -125,7 +125,9 @@
 		mounted(){
 			this.width = this.$refs[this.ref].clientWidth;
 			this.height = this.$refs[this.ref].clientHeight;
-			this.svgStatus = true;
+			this.$nextTick(()=>{
+				this.svgStatus = true;
+			});
 		},
 	}
 </script>
