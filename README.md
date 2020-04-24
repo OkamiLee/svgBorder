@@ -1,6 +1,6 @@
 # svg-border
 
-> A Vue.js project
+> svg动态边框试用与大数据可视化等等...
 
 ## Build Setup
 
